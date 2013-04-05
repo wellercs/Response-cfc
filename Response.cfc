@@ -19,11 +19,7 @@
 	</cffunction>
 	<cffunction name="setData" output="false" access="public" returntype="void">
 		<cfargument name="vlu" required="true">
-		<cfif len(trim(arguments.vlu))>
-			<cfset variables.response.data = arguments.vlu>
-		<cfelse>
-			<cfthrow message="'#arguments.vlu#' is not valid"/>
-		</cfif>
+		<cfset variables.response.data = arguments.vlu>
 	</cffunction>
 
 	<cffunction name="getErrorCode" output="false" access="public" returntype="any">
@@ -31,11 +27,7 @@
 	</cffunction>
 	<cffunction name="setErrorCode" output="false" access="public" returntype="void">
 		<cfargument name="vlu" required="true">
-		<cfif len(trim(arguments.vlu))>
-			<cfset variables.response.errorCode = arguments.vlu>
-		<cfelse>
-			<cfthrow message="'#arguments.vlu#' is not valid"/>
-		</cfif>
+		<cfset variables.response.errorCode = arguments.vlu>
 	</cffunction>
 
 	<cffunction name="getErrorDetail" output="false" access="public" returntype="any">
@@ -43,11 +35,7 @@
 	</cffunction>
 	<cffunction name="setErrorDetail" output="false" access="public" returntype="void">
 		<cfargument name="vlu" required="true">
-		<cfif len(trim(arguments.vlu))>
-			<cfset variables.response.errorDetail = arguments.vlu>
-		<cfelse>
-			<cfthrow message="'#arguments.vlu#' is not valid"/>
-		</cfif>
+		<cfset variables.response.errorDetail = arguments.vlu>
 	</cffunction>
 
 	<cffunction name="getErrorMessage" output="false" access="public" returntype="any">
@@ -55,11 +43,7 @@
 	</cffunction>
 	<cffunction name="setErrorMessage" output="false" access="public" returntype="void">
 		<cfargument name="vlu" required="true">
-		<cfif len(trim(arguments.vlu))>
-			<cfset variables.response.errorMessage = arguments.vlu>
-		<cfelse>
-			<cfthrow message="'#arguments.vlu#' is not valid"/>
-		</cfif>
+		<cfset variables.response.errorMessage = arguments.vlu>
 	</cffunction>
 
 	<cffunction name="getErrors" output="false" access="public" returntype="any">
@@ -67,11 +51,7 @@
 	</cffunction>
 	<cffunction name="setErrors" output="false" access="public" returntype="void">
 		<cfargument name="vlu" required="true">
-		<cfif len(trim(arguments.vlu))>
-			<cfset variables.response.errors = arguments.vlu>
-		<cfelse>
-			<cfthrow message="'#arguments.vlu#' is not valid"/>
-		</cfif>
+		<cfset variables.response.errors = arguments.vlu>
 	</cffunction>
 
 	<cffunction name="getStatusCode" output="false" access="public" returntype="any">
@@ -79,11 +59,7 @@
 	</cffunction>
 	<cffunction name="setStatusCode" output="false" access="public" returntype="void">
 		<cfargument name="vlu" required="true">
-		<cfif len(trim(arguments.vlu))>
-			<cfset variables.response.statusCode = arguments.vlu>
-		<cfelse>
-			<cfthrow message="'#arguments.vlu#' is not valid"/>
-		</cfif>
+		<cfset variables.response.statusCode = arguments.vlu>
 	</cffunction>
 
 	<cffunction name="getStatusText" output="false" access="public" returntype="any">
@@ -91,11 +67,7 @@
 	</cffunction>
 	<cffunction name="setStatusText" output="false" access="public" returntype="void">
 		<cfargument name="vlu" required="true">
-		<cfif len(trim(arguments.vlu))>
-			<cfset variables.response.statusText = arguments.vlu>
-		<cfelse>
-			<cfthrow message="'#arguments.vlu#' is not valid"/>
-		</cfif>
+		<cfset variables.response.statusText = arguments.vlu>
 	</cffunction>
 
 	<cffunction name="getSuccess" output="false" access="public" returntype="any">
@@ -103,11 +75,7 @@
 	</cffunction>
 	<cffunction name="setSuccess" output="false" access="public" returntype="void">
 		<cfargument name="vlu" required="true">
-		<cfif len(trim(arguments.vlu))>
-			<cfset variables.response.success = arguments.vlu>
-		<cfelse>
-			<cfthrow message="'#arguments.vlu#' is not valid"/>
-		</cfif>
+		<cfset variables.response.success = arguments.vlu>
 	</cffunction>
 
 	<cffunction name="getResponse" output="false" access="public" returntype="any" hint="Returns the current state of the bean.">
