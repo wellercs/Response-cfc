@@ -53,6 +53,12 @@
 		<cfargument name="vlu" required="true">
 		<cfset variables.response.errors = arguments.vlu>
 	</cffunction>
+	<cffunction name="appendError" output="false" access="public" returntype="void">
+		<cfargument name="theError" type="string" required="true">
+		<cfif len(trim(arguments.theError))>
+			<cfset arrayappend(variables.response.errors, arguments.theError)>
+		</cfif>
+	</cffunction>
 
 	<cffunction name="getStatusCode" output="false" access="public" returntype="any">
 		<cfreturn variables.response.statusCode>
