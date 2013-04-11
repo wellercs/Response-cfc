@@ -18,40 +18,40 @@
 		<cfreturn variables.response.data>
 	</cffunction>
 	<cffunction name="setData" output="false" access="public" returntype="void">
-		<cfargument name="vlu" required="true">
-		<cfset variables.response.data = arguments.vlu>
+		<cfargument name="data" required="true">
+		<cfset variables.response.data = arguments.data>
 	</cffunction>
 
 	<cffunction name="getErrorCode" output="false" access="public" returntype="any">
 		<cfreturn variables.response.errorCode>
 	</cffunction>
 	<cffunction name="setErrorCode" output="false" access="public" returntype="void">
-		<cfargument name="vlu" required="true">
-		<cfset variables.response.errorCode = arguments.vlu>
+		<cfargument name="errorCode" required="true">
+		<cfset variables.response.errorCode = arguments.errorCode>
 	</cffunction>
 
 	<cffunction name="getErrorDetail" output="false" access="public" returntype="any">
 		<cfreturn variables.response.errorDetail>
 	</cffunction>
 	<cffunction name="setErrorDetail" output="false" access="public" returntype="void">
-		<cfargument name="vlu" required="true">
-		<cfset variables.response.errorDetail = arguments.vlu>
+		<cfargument name="errorDetail" required="true">
+		<cfset variables.response.errorDetail = arguments.errorDetail>
 	</cffunction>
 
 	<cffunction name="getErrorMessage" output="false" access="public" returntype="any">
 		<cfreturn variables.response.errorMessage>
 	</cffunction>
 	<cffunction name="setErrorMessage" output="false" access="public" returntype="void">
-		<cfargument name="vlu" required="true">
-		<cfset variables.response.errorMessage = arguments.vlu>
+		<cfargument name="errorMessage" required="true">
+		<cfset variables.response.errorMessage = arguments.errorMessage>
 	</cffunction>
 
 	<cffunction name="getErrors" output="false" access="public" returntype="any">
 		<cfreturn variables.response.errors>
 	</cffunction>
 	<cffunction name="setErrors" output="false" access="public" returntype="void">
-		<cfargument name="vlu" required="true">
-		<cfset variables.response.errors = arguments.vlu>
+		<cfargument name="errors" required="true">
+		<cfset variables.response.errors = arguments.errors>
 	</cffunction>
 	<cffunction name="appendError" output="false" access="public" returntype="void">
 		<cfargument name="theError" type="string" required="true">
@@ -64,24 +64,24 @@
 		<cfreturn variables.response.statusCode>
 	</cffunction>
 	<cffunction name="setStatusCode" output="false" access="public" returntype="void">
-		<cfargument name="vlu" required="true">
-		<cfset variables.response.statusCode = arguments.vlu>
+		<cfargument name="statusCode" required="true">
+		<cfset variables.response.statusCode = arguments.statusCode>
 	</cffunction>
 
 	<cffunction name="getStatusText" output="false" access="public" returntype="any">
 		<cfreturn variables.response.statusText>
 	</cffunction>
 	<cffunction name="setStatusText" output="false" access="public" returntype="void">
-		<cfargument name="vlu" required="true">
-		<cfset variables.response.statusText = arguments.vlu>
+		<cfargument name="statusText" required="true">
+		<cfset variables.response.statusText = arguments.statusText>
 	</cffunction>
 
 	<cffunction name="getSuccess" output="false" access="public" returntype="any">
 		<cfreturn variables.response.success>
 	</cffunction>
 	<cffunction name="setSuccess" output="false" access="public" returntype="void">
-		<cfargument name="vlu" required="true">
-		<cfset variables.response.success = arguments.vlu>
+		<cfargument name="success" required="true">
+		<cfset variables.response.success = arguments.success>
 	</cffunction>
 
 	<cffunction name="getResponse" output="false" access="public" returntype="any" hint="Returns the current state of the bean.">
